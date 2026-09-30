@@ -1,0 +1,64 @@
+{
+  "street-letter": {
+    "legs": [
+      {
+        "index": 0,
+        "ok": true,
+        "distance": 163,
+        "duration": 185,
+        "mapURL": "https://lbs.baidu.com/mapstatic/agentui_resource.html?resource_key=12ceb20ac193112a81c0a78c16e9d08b",
+        "steps": [
+          "向西南方向出发,沿淮海中路走60米,左转",
+          "走10米,左转进入淮海中路",
+          "走100米,到达终点"
+        ]
+      },
+      {
+        "index": 1,
+        "ok": true,
+        "distance": 843,
+        "duration": 1016,
+        "mapURL": "https://lbs.baidu.com/mapstatic/agentui_resource.html?resource_key=d2b189e20e3a2461b4eb114f2903f669",
+        "steps": [
+          "走170米,右转进入宛平路",
+          "走680米,到达终点"
+        ]
+      }
+    ],
+    "checkedAt": "2026-09-29T05:01:49.547Z"
+  },
+  "lake-letter": {
+    "legs": [
+      {
+        "index": 0,
+        "ok": true,
+        "distance": 972,
+        "duration": 1170,
+        "mapURL": "https://lbs.baidu.com/mapstatic/agentui_resource.html?resource_key=38a82f6b40895c9865e0ec1bef8ecb4f",
+        "steps": [
+          "向东南方向出发,走20米,右转进入南山路",
+          "走20米,直行",
+          "走930米,到达终点"
+        ]
+      },
+      {
+        "index": 1,
+        "ok": true,
+        "distance": 820,
+        "duration": 957,
+        "mapURL": "https://lbs.baidu.com/mapstatic/agentui_resource.html?resource_key=ad0ab0213588a1b489f974735f512910",
+        "steps": [
+          "向西南方向出发,走40米,左前方转",
+          "走150米,右转",
+          "走30米,左转",
+          "走60米,右转",
+          "走40米,右前方转进入南山路",
+          "走420米,右转",
+          "走70米,左转",
+          "走20米,到达终点"
+        ]
+      }
+    ],
+    "checkedAt": "2026-09-29T05:01:49.979Z"
+  }
+}
