@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="借你一个下午：可交互的城市路线来信演示，含54秒视频、体验指引与百度地图接入说明。">
+  <meta name="theme-color" content="#e9edf6">
+  <title>借你一个下午 · 作品演示</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .review{max-width:920px;margin:0 auto;padding:32px 28px 70px}.review h1{font:500 clamp(34px,7vw,54px) var(--serif);color:var(--blue);margin:20px 0}.review h2{font:500 24px var(--serif);margin-bottom:14px}.review p,.review li{line-height:1.9}.review .lead{font-size:20px;max-width:650px}.review .actions{margin:24px 0;flex-wrap:wrap}.review section{border-top:1px solid var(--line);padding-top:28px;margin-top:36px}.review video{width:100%;display:block;border-radius:18px;background:var(--sky);margin:20px 0 12px}.review ol,.review ul{padding-left:22px}.review li+li{margin-top:10px}.review .label{display:inline-block;background:var(--sky);color:var(--blue);padding:5px 12px;border-radius:20px;font-size:12px;margin-top:32px}.review .facts{display:grid;grid-template-columns:1fr 1fr;gap:20px}.review .fact{background:white;padding:22px;border-radius:16px}.review .fact b{color:var(--blue);display:block;margin-bottom:8px}.review a.text-btn{text-decoration:underline;text-underline-offset:4px}.review small{display:block;line-height:1.8}@media(max-width:560px){.review{padding:22px 20px 48px}.review .facts{grid-template-columns:1fr}.review .lead{font-size:17px}}
+  </style>
+</head>
+<body><main class="review">
+  <a class="text-btn" href="./">← 打开可交互作品</a><br>
+  <span class="label">百度地图开发者大赛 · 在线演示</span>
+  <h1>借你一个下午</h1>
+  <p class="lead">把一个人的地点和故事，写成另一人可以走进去的信。</p>
+  <p style="margin-top:16px">给异地朋友留一条私人城市路线：挑几个有意义的地方，放进文字、照片或声音，让对方逐站阅读，最后留下一封回信。</p>
+  <div class="actions"><a class="btn" href="./#route/lake-letter">开始体验杭州来信 ↗</a><a class="btn secondary" href="./#route/street-letter">看看上海来信</a><a class="text-btn" href="#video">看 54 秒视频 ↓</a></div>
+  <small>无需登录，无需配置密钥。网站可独立访问，不依赖演示电脑在线。</small>
+  <section id="video"><h2>54 秒，看一封信怎样变成一条路。</h2>
+    <video controls preload="metadata" playsinline poster="./assets/lake.svg" aria-label="54秒作品演示视频"><source src="./demo.mp4" type="video/mp4">当前浏览器不支持视频，请打开下方视频链接。</video>
+    <small>由原服务端版本的实际页面截图组成的无声演示短片；示例人物和故事为原创虚构。当前在线版的体验范围见下方说明。</small>
+    <a class="text-btn" href="./demo.mp4" target="_blank" rel="noopener">单独打开演示视频 ↗</a>
+  </section>
+  <section><h2>用三分钟，借一个下午。</h2><ol>
+    <li><b>读一条路线：</b>打开杭州或上海来信，查看逐段步行记录，点击“开始这个下午”，阅读三站故事。</li>
+    <li><b>试写自己的信：</b>从“留下我的路线”进入，点击“先用示例试一试”。改写署名、标题和故事，生成演示路线。也可以选“在示例地点中找”体验地点确认。</li>
+    <li><b>留一封回信：</b>读到新建路线的最后一站，保存演示回信，再进入“我的来信 → 查看回信”。刷新页面后仍可读回。</li>
+  </ol><p style="margin-top:18px">两条示例可以通过公开链接分享；你新建的路线、照片、录音和回信仅保存在当前浏览器，不会上传或发送给他人，也不能跨设备访问。</p></section>
+  <section><h2>地点是真实的，故事可以是你的。</h2><div class="facts">
+    <div class="fact"><b>杭州 · 西湖边</b><p>柳浪闻莺公园 → 长桥公园 → 雷峰塔景区售票处</p><small>已保存步行记录：1,792 米 / 约 36 分钟，不含停留。</small></div>
+    <div class="fact"><b>上海 · 熟悉的街</b><p>武康大楼 → 宋庆龄故居 → 徐家汇公园</p><small>已保存步行记录：1,006 米 / 约 21 分钟，不含停留。</small></div>
+  </div><p style="margin-top:18px">以上 6 个地点与 4 段步行数据于 <b>2026-09-29</b> 通过百度地图 Agent Plan 的 Place / Direction 接口核验。本在线版展示已保存的记录，不进行新的实时查询。每段提供官方地图入口和文字步行指引。</p></section>
+  <section><h2>百度地图接入与演示范围</h2><ul>
+    <li><b>完整服务端版本：</b>仓库提供 Place 地点搜索、Direction 逐段步行规划、服务端路线与回信存储。地图凭据仅由服务端读取。</li>
+    <li><b>当前在线版：</b>可浏览故事、试选 6 个核验地点、改写路线、添加附件、设备朗读和模拟回信收件；新创作内容留在此浏览器。新地点、改序后未覆盖的路段会显示“没有已核验记录”。</li>
+    <li><b>地图显示：</b>页面内为故事顺序示意，不是街道底图；官方百度地图在新窗口打开。出发前应在地图与现场确认通行情况。</li>
+  </ul><p style="margin-top:18px">尚未完成真实用户需求验证、实地走访或手机麦克风/GPS 验收。示例故事、人物和插画为原创创作内容；设备朗读不冒充作者原声。</p>
+  <div class="actions"><a class="btn" href="./">开始体验 ↗</a><a class="text-btn" href="https://github.com/maxi-max-dev/borrow-an-afternoon" target="_blank" rel="noopener">查看 GitHub 源码 ↗</a></div>
+  <small>在线演示更新：2026-10-01 · GitHub Pages</small></section>
+</main></body></html>
